@@ -320,9 +320,8 @@ function containsSubstring(str, substring) {
  *   countVowels('XYZ') => 1
  */
 function countVowels(str) {
-  let matches = str;
+  const matches = str.match(/[eyuioa]/gi);
   if (matches === null) return 0;
-  matches = str.matchAll(/[eyuioa]/gi);
   return matches.length;
 }
 
